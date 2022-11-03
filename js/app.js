@@ -1,4 +1,4 @@
-function post (t, e, o) {return $.ajax({ type: 'POST', url: t, data: e, success: o, dataType: 'json' })}
+function post(t, e, o) { return $.ajax({ type: 'POST', url: t, data: e, success: o, dataType: 'json' }) }
 
 // const leftArrow = '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
 //   '<rect x="0.5" y="0.5" width="39" height="39" transform="matrix(-4.37114e-08 1 1 4.37114e-08 -2.18557e-08 2.18557e-08)" stroke="black"/>\n' +
@@ -63,9 +63,26 @@ $().ready(function () {
       }
     }]
   })
-
+  
   $('.useful-slick').slick({
     dots: true, infinite: false, speed: 300, slidesToShow: 4, slidesToScroll: 1, // prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
+    // nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
+    responsive: [{
+      breakpoint: 1024, settings: {
+        slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
+      }
+    }, {
+      breakpoint: 600, settings: {
+        slidesToShow: 2, slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 480, settings: {
+        slidesToShow: 1, slidesToScroll: 1
+      }
+    }]
+  })
+  $('.useful-slick-slider').slick({
+    dots: true, infinite: false, speed: 300, slidesToShow: 3, slidesToScroll: 1, // prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     // nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
     responsive: [{
       breakpoint: 1024, settings: {
@@ -109,7 +126,7 @@ $().ready(function () {
     e.stopPropagation()
   })
 
-  let slider = document.getElementById('range-slider')
+  let slider = document.getElementById('range-slider-price')
   if (slider !== null) {
     noUiSlider.create(slider, {
       start: [100000, 1000000], connect: true, range: {
@@ -118,10 +135,25 @@ $().ready(function () {
     })
 
     slider.noUiSlider.on('update', function (e) {
-      $('.es-range-min').val(formatPrice(Math.round(e[0])))
-      $('.es-range-max').val(formatPrice(Math.round(e[1])))
+      $('.es-range-min.price-range').val(formatPrice(Math.round(e[0])))
+      $('.es-range-max.price-range').val(formatPrice(Math.round(e[1])))
     })
   }
+  let sliderPage = document.getElementById('range-slider-page')
+  if (sliderPage !== null) {
+    noUiSlider.create(sliderPage, {
+      start: [100000, 1000000], connect: true, range: {
+        'min': 100000, 'max': 1000000
+      }
+    })
+
+    sliderPage.noUiSlider.on('update', function (e) {
+      console.log("asdasd")
+      $('.es-range-min.page-range').val(formatPrice(Math.round(e[0])))
+      $('.es-range-max.page-range').val(formatPrice(Math.round(e[1])))
+    })
+  }
+
 
   $(window).on('scroll', function () {
     $scrollTop = $(window).scrollTop(), t = $('#back-top'), $scrollTop > 350 ? t.addClass('visible') : t.removeClass('visible')

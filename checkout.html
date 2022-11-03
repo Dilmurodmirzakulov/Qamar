@@ -22,39 +22,128 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light es-second-navbar" id="mainNavbar">
             <div class="container">
-                <a href="#">
+                <a href="index.html">
                     <img alt="back" src="img/ic-arrow-left.svg" />
                 </a>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img alt="Qamar" src="img/logo.png" />
                 </a>
-                <a href="#">
+                <a href="index.html">
                     <img src="img/ic_close_modal.svg" />
                 </a>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="es-checkout-bg">
         <div class="container">
-            <div class="es-checkout-info-container">
-                <h2 class="es-checkout-info-header">Manzil va tel.raqam</h2>
-                <p class="es-checkout-desc">Mahsulot yetkazib beriladigan manzilni va telefon raqamingizni kiriting.</p>
-                <input type="text" class="form-control es-checkout-input" value="Huzayfa">
-                <input type="text" class="form-control es-checkout-input" value="+998 (90) 900-49-38">
-            </div>
-            <div class="es-checkout-info-container">
-                <h2 class="es-checkout-info-header">Manzil va tel.raqam</h2>
-                <p class="es-checkout-desc">O‘zingizga qulay to‘lov turini tanlang. Agar onlayn to‘lovni tanlagan bo‘lsangiz to‘lovni amalga oshiring.</p>
-                <div class="es-checkout-options-container">
-                    <button class="es-select-option">
-                        <h4>Kuryer xizmati</h4>
-                        <p>15,000 so‘m</p>
-                    </button>
-                    <button class="es-select-option">
-                        <h4>Olib ketish</h4>
-                        <p>BEPUL</p>
-                    </button>
+            <div class="es-checkout-wrapper">
+                <div class="es-checkout-info-containers">
+                    <div class="es-checkout-info-container">
+                        <h2 class="es-checkout-info-header">Manzil va tel.raqam</h2>
+                        <p class="es-checkout-desc">Mahsulot yetkazib beriladigan manzilni va telefon raqamingizni
+                            kiriting.
+                        </p>
+                        <input type="text" class="form-control es-checkout-input" value="Huzayfa">
+                        <input type="text" class="form-control es-checkout-input" value="+998 (90) 900-49-38">
+                        <div class="es-checkout-options-container">
+                            <div class="es-checkout-options">
+                                <button class="es-select-option active">
+                                    <h4>Kuryer xizmati</h4>
+                                    <p>15,000 so‘m</p>
+                                </button>
+                                <button class="es-select-option">
+                                    <h4>Olib ketish</h4>
+                                    <p>BEPUL</p>
+                                </button>
+                            </div>
+                            <p class="es-alert-text"><img class="mr-2" src="img/ic_info.svg" alt="">Kuryer siz bergan
+                                manzilga
+                                yetkazib beradi</p>
+
+                            <p class="es-alert-text d-none"><img class="mr-2" src="img/ic_info.svg" alt="">Do‘konga
+                                kelib buyurtmani
+                                olib ketasiz. Do‘kon 9:00dan - 18:00gacha ishlaydi.</p>
+
+                        </div>
+                        <input type="text" class="form-control es-checkout-input es-address-input"
+                            value="Yashnobod tumani, Qorasuv 6, 46-xonadon">
+
+                        <button class="btn es-address-btn btn-lg">MANZILNI O‘ZGARTIRISH</button>
+
+                        <input type="text" class="form-control es-checkout-input"
+                            placeholder="Kuryerga kommentariya yozing...">
+                    </div>
+                    <div class="es-checkout-info-container">
+                        <h2 class="es-checkout-info-header">Manzil va tel.raqam</h2>
+                        <p class="es-checkout-desc">O‘zingizga qulay to‘lov turini tanlang. Agar onlayn to‘lovni
+                            tanlagan
+                            bo‘lsangiz to‘lovni amalga oshiring.</p>
+                        <div class="es-checkout-options-container">
+                            <div class="es-checkout-options">
+                                <button class="es-select-option active">
+                                    <h4>Onlayn to‘lov</h4>
+                                    <p>Kartadan</p>
+                                </button>
+                                <button class="es-select-option">
+                                    <h4>Naqd to‘lov</h4>
+                                    <p>So‘mda</p>
+                                </button>
+                            </div>
+                            <p class="es-alert-text"><img class="mr-2" src="img/ic_info.svg" alt="">Karta orqali pul
+                                yechilib
+                                olinadi</p>
+                            <p class="es-alert-text d-none"><img class="mr-2" src="img/ic_info.svg" alt="">Naqd pulni
+                                kuryerga berasiz</p>
+
+                        </div>
+                        <input type="text" class="form-control es-checkout-input"
+                            placeholder="Karta raqamini kiriting (---- ---- ---- ----)">
+                        <input type="text" class="form-control es-checkout-input"
+                            placeholder="Amal qilish muddatini kiriting (--/--)">
+                        <button class="btn es-confirm-order-btn btn-lg w-100">BUYURTMANI TASDIQLASH</button>
+                    </div>
+                </div>
+                <div class="es-order-wrapper">
+                    <div class="es-order">
+                        <div class="es-order-header">
+                            <div class="es-order-main-header">
+                                <h4>Buyurtmangiz</h4> &nbsp;
+                                <span>/ 4ta</span>
+                            </div>
+                            <button class="es-order-edit btn">
+                                O‘ZGARTIRISH
+                            </button>
+                        </div>
+                        <div class="es-purchased-items row">
+                            <div class="col-4 es-purchased-item">
+                                <img class="img-fluid" src="img/medicine.png" alt="">
+                            </div>
+                            <div class="col-4 es-purchased-item">
+                                <img class="img-fluid" src="img/medicine.png" alt="">
+                            </div>
+                            <div class="col-4 es-purchased-item">
+                                <img class="img-fluid" src="img/medicine.png" alt="">
+                            </div>
+                            <div class="col-4 es-purchased-item">
+                                <img class="img-fluid" src="img/medicine.png" alt="">
+                            </div>
+                        </div>
+                        <p class="es-item-price-container position-relative">
+                            <span class="es-price-title">Buyurtma summasi</span>
+                            <span class="es-item-price">412,000 so‘m</span>
+                        </p>
+                        <p class="es-item-price-container">
+                            <span class="es-price-title">Skidka</span>
+                            <span class="es-item-price es-sale-price">-55,000 so‘m</span>
+                        </p>
+                        <p class="es-item-price-container">
+                            <span class="es-price-title">Yetkazib berish</span>
+                            <span class="es-item-price">15,000 so‘m</span>
+                        </p>
+                        <p class="es-total-price-title">Jami:</p>
+                        <p class="es-total-price">357,000 so‘m</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,28 +151,18 @@
 
     <footer>
         <div class="footer-black">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row footer-detail">
-                    <div class="col-md-4">
-                        <div class="social-list">
-                            <a href="#"><img src="img/ic_facebook.svg" /></a>
-                            <a href="#"><img src="img/ic_telegram.svg" /></a>
-                            <a href="#"><img src="img/ic_instagram.svg" /></a>
-                        </div>
+                    <div class="col-md-3">
+                        <h4 class="es-second-footer-header">Yordam markazi 9:00 dan - 18:00 gacha</h4>
+                        <a class="es-second-footer-link" href="tel:++998998454400">+998 (99) 845-44-00</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="es-second-footer-header">Telegram admin</h4>
+                        <a class="es-second-footer-link" href="#">@qamar_delivery</a>
                     </div>
                     <div class="col-md-3">
-                        <div class="app-list text-center">
-                            <a href="#" class="mr-5"><img src="img/as.svg" /></a>
-                            <a href="#"><img src="img/gp.svg" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="social-list pay-list">
-                            <a href="#"><img src="img/ic_visa.png" /></a>
-                            <a href="#"><img src="img/ic_payme.png" /></a>
-                            <a href="#"><img src="img/ic_click.png" /></a>
-                            <a href="#"><img src="img/ic_master.png" /></a>
-                        </div>
+                        <a href="#" class="es-second-footer-header">Mahsulotni qaytarib berish politikasi</a>
                     </div>
                 </div>
             </div>

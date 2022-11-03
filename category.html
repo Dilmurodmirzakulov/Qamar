@@ -33,7 +33,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link call-link" href="#">
+            <a class="nav-link call-link" href="tel:+998901234567">
               <img src="img/ic_call.svg" />
               <span>(90) 123 45 67</span>
             </a>
@@ -54,7 +54,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light es-navbar" id="mainNavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img alt="Qamar" src="img/logo.svg" />
         </a>
         <button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle btn-catalog"
@@ -300,9 +300,9 @@
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb es-breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item"><a href="#">Книги</a></li>
-            <li aria-current="page" class="breadcrumb-item active">Новые книги</li>
+            <li class="breadcrumb-item"><a href="index.html">Bosh sahifa</a></li>
+            <li class="breadcrumb-item"><a href="#">Kitoblar</a></li>
+            <li aria-current="page" class="breadcrumb-item active">Diniy ma’rifiy adabiyot</li>
           </ol>
         </nav>
 
@@ -312,16 +312,14 @@
             <div class="es-category-filter">
               <ul class="es-category-list">
                 <li>
-                  <a href="#">Aksiyalar</a>
+                  <a href="actions.html">Aksiyalar</a>
                 </li>
-                <div id="accordion">
+                <div id="accordion" class="accordion-hover">
                   <div class="card es-accordion-card">
-                    <h5 class="mb-0">
-                      <button class="btn es-collapse-btn collapsed" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
-                        Diniy ma’rifiy adabiyot
-                      </button>
-                    </h5>
+                    <button class="btn es-collapse-btn collapsed" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      Diniy ma’rifiy adabiyot
+                    </button>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
                         <ul class="es-accordion-list">
@@ -367,10 +365,10 @@
             </div>
             <div class="es-category-filter">
               <div class="es-cf-title">Narx</div>
-              <div id="range-slider"></div>
+              <div id="range-slider-price"></div>
               <div class="es-range-values">
-                <input class="form-control es-range-min" name="min" type="text" />
-                <input class="form-control es-range-max" name="max" type="text" />
+                <input class="form-control es-range-min price-range" name="min" type="text" />
+                <input class="form-control es-range-max price-range" name="max" type="text" />
               </div>
             </div>
             <div class="es-category-filter">
@@ -398,23 +396,71 @@
                 </li>
               </ul>
             </div>
+            <div class="es-category-filter">
+              <div class="es-cf-title">Muallif</div>
+              <ul class="es-category-list">
+                <li>
+                  <label>
+                    <input name="check" type="checkbox" /> Hasan ul-Basriy
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input name="check" type="checkbox" /> Muhammad Sayyid Tantoviy
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input name="check" type="checkbox" /> Muhammad Taqiy Usmoniy
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input name="check" type="checkbox" /> Ahmad Lutfiy qozonchi
+                  </label>
+                </li>
+                <li>barchasini ko‘rish</li>
+              </ul>
+            </div>
+            <div class="es-category-filter">
+              <div class="es-cf-title">Betlar soni</div>
+              <div id="range-slider-page"></div>
+              <div class="es-range-values">
+                <input class="form-control es-range-min page-range" name="minPage" type="text" />
+                <input class="form-control es-range-max page-range" name="maxPage" type="text" />
+              </div>
+            </div>
           </div>
           <div class="col-md-9">
+            <ul class="es-product-filter align-baseline">
+              <li class="active">
+                <button class="btn">Yangilari bo‘yicha</button>
+              </li>
+              <li>
+                <button class="btn">Mashhurlari bo‘yicha</button>
+              </li>
+              <li>
+                <button class="btn">Narxi bo‘yicha</button>
+              </li>
+              <li class="es-filter-ic">
+                <img src="img/ic_filter.svg" alt="">
+              </li>
+            </ul>
             <div class="row">
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -433,17 +479,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -462,17 +508,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -491,17 +537,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -520,17 +566,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -549,17 +595,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -578,17 +624,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -607,17 +653,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -636,17 +682,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -665,17 +711,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -694,17 +740,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -723,17 +769,17 @@
               <div class="col-md-3">
                 <div class="es-product-item">
                   <div class="es-product-header">
-                    <a href="#">
+                    <a href="product-view.html">
                       <img class="img-fluid w-100" src="img/product.jpg" />
                     </a>
                     <button class="btn btn-favorite"></button>
                   </div>
                   <div class="es-product-detail">
                     <div class="es-product-category">
-                      <a href="#">Kitoblar</a>
+                      <a href="product-view.html">Kitoblar</a>
                     </div>
                     <div class="es-product-title">
-                      <a href="#">Oltin silsila to‘plami</a>
+                      <a href="product-view.html">Oltin silsila to‘plami</a>
                     </div>
                     <div class="es-product-price">
                       89,000 so‘m
@@ -757,7 +803,7 @@
 
     <section class="es-app-section">
       <div class="es-app-bg">
-        <div class="container">
+        <div class="container-fluid">
           <div class="es-app-content">
             <div class="es-app-title">
               Yanada qulaylik uchun<br>Qamar ilovasini yuklab oling
@@ -766,8 +812,8 @@
               Ilova barcha platformalarda, barcha<br>qurilmalar uchun mavjud.
             </div>
             <div class="es-app-list">
-              <a href="#"><img src="img/as.svg" /></a>
-              <a href="#"><img src="img/gp.svg" /></a>
+              <a href="#"><img src="img/as-2.svg" /></a>
+              <a href="#"><img src="img/gp-2.svg" /></a>
             </div>
 
             <div class="es-app-icons">
@@ -786,19 +832,19 @@
           <div class="footer-left">
             <ul class="nav footer-list">
               <li class="nav-item">
-                <a class="item-link" href="#">Каталог</a>
+                <a class="item-link" href="actions.html">Aksiyalar</a>
               </li>
               <li class="nav-item">
-                <a class="item-link" href="#">Бренды</a>
+                <a class="item-link" href="useful-articles.html">Foydali maqolalar</a>
               </li>
               <li class="nav-item">
-                <a class="item-link" href="#">О компании</a>
+                <a class="item-link" href="wholesale.html">Ulgurji xarid</a>
               </li>
               <li class="nav-item">
-                <a class="item-link" href="#">Акции и скидки</a>
+                <a class="item-link" href="carriers-page.html">Postavshiklar uchun</a>
               </li>
               <li class="nav-item">
-                <a class="item-link" href="#">Контакты</a>
+                <a class="item-link" href="contacts.html">Kontaktlar</a>
               </li>
             </ul>
           </div>
@@ -815,10 +861,10 @@
           <div class="footer-right">
             <ul class="nav footer-list mb-4">
               <li class="nav-item">
-                <a class="item-link" href="#">(99) 845-44-00</a>
+                <a class="item-link" href="tel:+998998454400">(99) 845-44-00</a>
               </li>
               <li class="nav-item">
-                <a class="item-link" href="#">Публичная оферта</a>
+                <a class="item-link" href="privacy.html">Foydalanish shartlari</a>
               </li>
             </ul>
             <div class="es-footer-info">
