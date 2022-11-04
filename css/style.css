@@ -1167,26 +1167,31 @@ footer {
 .es-locations {
   position: relative;
   margin-bottom: 5rem;
+  height: 24rem;
+  background-image: url(../img/maps.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .es-location-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
 }
 
 .es-location-content {
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: space-between;
-  position: absolute;
-  top: 1.5rem;
-  bottom: 1.5rem;
   background-color: #ffffff;
-  padding: 2.25rem 3rem;
+  padding: 2.25rem 3rem 2.625rem;
 }
 
 .es-location-title {
@@ -1197,8 +1202,19 @@ footer {
 
 .es-location-info {
   color: rgba(21, 21, 21, 0.64);
+  margin-bottom: 1.5rem;
 }
-
+.btn-location{
+  padding: .875rem 1.125rem;
+  background-color: #151515;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+.btn-location:hover{
+  color: #fff;
+}
 .es-footer-info {
   font-size: 0.875rem;
 }
@@ -1396,7 +1412,7 @@ footer {
 }
 
 .btn-gray {
-  font-weight: 500;
+  font-weight: 400;
   color: #151515;
   font-size: 0.875rem;
   letter-spacing: 1px;
@@ -1406,8 +1422,18 @@ footer {
   border-radius: 0.25rem;
   transition: all 300ms;
 }
-
-.btn-gray:hover {
+.btn-save{
+  font-weight: 400;
+  color: #151515;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(210, 210, 210, 0.25);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  transition: all 300ms;
+}
+.btn-gray:hover, .btn-save:hover {
   color: #151515;
   background-color: #d2d2d2;
 }
@@ -1428,12 +1454,10 @@ footer {
   font-weight: 500;
 }
 
-.es-product-section {
-  padding: 3rem 0;
-}
-
 .es-back-block {
-  margin-bottom: 2rem;
+  margin-bottom: 2.625rem;
+  margin-top: 1.2rem;
+
 }
 
 .es-block-link {
@@ -1444,9 +1468,23 @@ footer {
 }
 
 .es-pv-header {
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
 }
 
+.es-header-to-right{
+  width: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(50%);
+}
+
+.es-mt-72px{
+  margin-top: 4.5rem;
+}
+.es-mt-118{
+  margin-top: 7.375rem;
+}
 .es-pv-detail {
   padding: 1rem 2rem;
 }
@@ -1471,6 +1509,7 @@ footer {
 
 .es-pvd-value {
   color: #151515;
+  font-weight: 500;
 }
 
 .es-pv-price {
@@ -1521,6 +1560,8 @@ footer {
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
+  padding: .2rem 0;
+  margin-top: .4rem;
 }
 
 .es-breadcrumb .breadcrumb-item {
@@ -1539,7 +1580,7 @@ footer {
 .es-category-title {
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
 }
 
 .es-category-count {
@@ -1552,7 +1593,7 @@ footer {
 .es-category-filter {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(210, 210, 210, 0.2);
+  border-bottom: 1.5px solid rgba(210, 210, 210, 0.2);
 }
 
 .es-category-list {
@@ -1654,7 +1695,7 @@ footer {
 .es-action-title {
   font-size: 2.625rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
 }
 
 .es-action-title a {
@@ -1664,33 +1705,39 @@ footer {
 }
 
 .es-action-info {
-  margin-bottom: 2rem;
+  margin-bottom: 2.3125rem;
 }
 
 .es-action-period {
   font-size: 1.25rem;
   font-weight: 500;
   color: #a5a5a5;
+  padding-top: 1.3rem;
 }
 
 .es-action-view {
-  padding: 4rem 5rem;
+  padding: .5rem 5.375rem 4.5rem 5.375rem;
 }
-
-.es-action-description {}
 
 .es-action-date {
   text-align: right;
 }
 
+.es-action-date p{
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
 .es-subtitle {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: .75rem;
 }
 
 .es-contact-item {
-  margin-bottom: 4rem;
+  margin-bottom: 7.375rem;
 }
 
 .es-contact-info {
@@ -1698,7 +1745,12 @@ footer {
 }
 
 .es-contact-detail {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.es-contact-detail p a{
+  font-size: 600;
+  font-weight: 500;
 }
 
 #back-top {
@@ -1729,8 +1781,6 @@ footer {
 #back-top.visible:hover {
   opacity: 1;
 }
-
-#back-top img {}
 
 .es-lang-dropdown .dropdown-toggle::after {
   display: none;
@@ -1801,6 +1851,7 @@ footer {
 
 .es-location-title {
   margin-right: 8rem;
+  margin-bottom: .75rem;
 }
 
 .es-products-section {
@@ -1878,6 +1929,9 @@ footer {
 
 .btn-more {
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  width: max-content;
 }
 
 .es-collection-title a {
@@ -1903,8 +1957,9 @@ footer {
 }
 
 .es-tab-item a {
-  margin-bottom: -2px !important;
+  margin-bottom: -1px !important;
   width: max-content;
+  border: 0 !important;
 }
 
 .es-tab-item a:hover {
@@ -2982,6 +3037,80 @@ footer {
   color: #777777;
 }
 
+.es-collection-title a{
+  font-weight: 600;
+}
+
+.es-collection-info{
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+.btn-more{
+  font-weight: 500;
+}
+.es-border-b-header{
+  border-bottom: 0;
+}
+.es-contact-number{
+  margin-bottom: .75rem;
+}
+.es-breadcrumb-ac-view-mb{
+  margin-bottom: 4.2rem;
+}
+.es-action-view-banner-h{
+  height: 18.75rem;
+}
+.es-action-view-banner-h .es-action-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.es-action-view-banner-h .es-action-detail .es-action-info{
+  margin-bottom: 0;
+}
+.es-action-view-banner-h .es-action-title{
+  margin-bottom: .5rem;
+}
+.es-action-description{
+  width: 35.5rem;
+  font-size: 1.125rem;
+}
+.es-action-description p{
+  margin-bottom: 0;
+}
+.es-action-view-subtitle{
+  padding-left: 4.45rem;
+  margin-bottom: 1.5rem;
+}
+.es-product-img-slider-pages{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .4rem;
+}
+.es-product-img-slider-pages p{
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.es-next-product-imgs{
+  font-weight: 400;
+  color: #A5A5A5;
+  margin-left: -.3rem;
+}
+.category-products-list{
+  padding-left: 3rem;
+}
+
+.category-products-list .col-md-3{
+  padding: 12px;
+}
+input[type=checkbox] {
+  accent-color: #c07b3e53;
+}
+.es-minus-line{
+  font-size: 27px;
+}
 @media screen and (max-width: 767px) {
   .es-checkout-wrapper {
     flex-direction: column;
