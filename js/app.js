@@ -63,7 +63,7 @@ $().ready(function () {
       }
     }]
   })
-  
+
   $('.useful-slick').slick({
     dots: true, infinite: false, speed: 300, slidesToShow: 4, slidesToScroll: 1, // prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     // nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
