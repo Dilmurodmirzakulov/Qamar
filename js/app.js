@@ -32,16 +32,16 @@ $().ready(function () {
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
     responsive: [{
-      breakpoint: 1024, settings: {
+      breakpoint: 1199, settings: {
         slidesToShow: 4, slidesToScroll: 1, infinite: true, dots: true
       }
     }, {
-      breakpoint: 600, settings: {
+      breakpoint: 991, settings: {
         slidesToShow: 3, slidesToScroll: 1
       }
     }, {
-      breakpoint: 480, settings: {
-        slidesToShow: 2, slidesToScroll: 1
+      breakpoint: 767, settings: {
+        slidesToShow: 1, slidesToScroll: 1, arrows: false, centerMode: true
       }
     }]
   })
@@ -50,16 +50,16 @@ $().ready(function () {
     dots: true, infinite: false, speed: 300, slidesToShow: 3, slidesToScroll: 1, // prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     // nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
     responsive: [{
-      breakpoint: 1024, settings: {
+      breakpoint: 1199, settings: {
         slidesToShow: 2, slidesToScroll: 1, infinite: true, dots: true
       }
     }, {
-      breakpoint: 600, settings: {
+      breakpoint: 991, settings: {
         slidesToShow: 1, slidesToScroll: 1
       }
     }, {
-      breakpoint: 480, settings: {
-        slidesToShow: 1, slidesToScroll: 1
+      breakpoint: 767, settings: {
+        slidesToShow: 1, slidesToScroll: 1, arrows: false, centerMode: true, dots: false
       }
     }]
   })
@@ -68,16 +68,16 @@ $().ready(function () {
     dots: true, infinite: false, speed: 300, slidesToShow: 4, slidesToScroll: 1, // prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     // nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
     responsive: [{
-      breakpoint: 1024, settings: {
+      breakpoint: 1199, settings: {
         slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
       }
     }, {
-      breakpoint: 600, settings: {
+      breakpoint: 991, settings: {
         slidesToShow: 2, slidesToScroll: 1
       }
     }, {
-      breakpoint: 480, settings: {
-        slidesToShow: 1, slidesToScroll: 1
+      breakpoint: 767, settings: {
+        slidesToShow: 1, slidesToScroll: 1, arrows: false, centerMode: true, dots: false
       }
     }]
   })
@@ -85,16 +85,16 @@ $().ready(function () {
     dots: true, infinite: false, speed: 300, slidesToShow: 3, slidesToScroll: 1, // prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     // nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
     responsive: [{
-      breakpoint: 1024, settings: {
-        slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
+      breakpoint: 1199, settings: {
+        slidesToShow: 3, slidesToScroll: 1, infinite: true
       }
     }, {
-      breakpoint: 600, settings: {
+      breakpoint: 991, settings: {
         slidesToShow: 2, slidesToScroll: 1
       }
     }, {
-      breakpoint: 480, settings: {
-        slidesToShow: 1, slidesToScroll: 1
+      breakpoint: 767, settings: {
+        slidesToShow: 1, slidesToScroll: 1, arrows: false, centerMode: true, dots: false
       }
     }]
   })
@@ -108,15 +108,15 @@ $().ready(function () {
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>',
     responsive: [{
-      breakpoint: 1024, settings: {
+      breakpoint: 1199, settings: {
         slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
       }
     }, {
-      breakpoint: 600, settings: {
+      breakpoint: 991, settings: {
         slidesToShow: 2, slidesToScroll: 1
       }
     }, {
-      breakpoint: 480, settings: {
+      breakpoint: 767, settings: {
         slidesToShow: 1, slidesToScroll: 1
       }
     }]
