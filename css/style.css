@@ -924,7 +924,7 @@ footer {
   border: 0;
 }
 
-.product-view-add-to-cart-btn{
+.product-view-add-to-cart-btn {
   font-weight: 500;
   color: #ffffff;
   font-size: 1rem;
@@ -935,7 +935,7 @@ footer {
   border: 0;
 }
 
-.es-quick-buy-btn{
+.es-quick-buy-btn {
   padding: 17px 1.125rem;
   font-weight: 400;
 }
@@ -1198,7 +1198,7 @@ footer {
   background-position: center;
 }
 
-.es-fit-content{
+.es-fit-content {
   width: fit-content !important;
 }
 
@@ -1612,13 +1612,16 @@ footer {
   font-weight: 600;
   margin-bottom: 4.5rem;
 }
-.profile-info-nav{
+
+.profile-info-nav {
   border-bottom: 0 !important;
 }
-.profile-info-nav li a{
+
+.profile-info-nav li a {
   font-weight: 500 !important;
   padding: 1rem !important;
 }
+
 .es-category-count {
   font-size: 0.875rem;
   color: #a5a5a5;
@@ -1650,7 +1653,7 @@ footer {
   border-radius: 4px;
 }
 
-.es-category-see-all-btn{
+.es-category-see-all-btn {
   color: #a0a0a0;
   font-size: .9rem;
   font-weight: 500;
@@ -2013,7 +2016,7 @@ footer {
   border: 0 !important;
 }
 
-.es-first-tab-item{
+.es-first-tab-item {
   margin-left: 0 !important;
 }
 
@@ -2025,9 +2028,11 @@ footer {
 .es-tab-item .active:hover {
   border-bottom: 3px solid #E2A874 !important;
 }
-.es-tab-content{
+
+.es-tab-content {
   width: 70%;
 }
+
 .es-parfume-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -2804,7 +2809,7 @@ footer {
   background-color: #A5A5A5;
 }
 
-.useful-articles-main-header{
+.useful-articles-main-header {
   margin-bottom: 4.5rem;
 }
 
@@ -2842,16 +2847,20 @@ footer {
   width: 855px;
   margin: auto;
 }
-.es-article-full-content .es-useful-section .section-title{
+
+.es-article-full-content .es-useful-section .section-title {
   text-align: left;
 }
-.es-article-full-content .es-useful-section .container{
+
+.es-article-full-content .es-useful-section .container {
   padding: 0;
 }
-.es-article-time{
+
+.es-article-time {
   color: #a5a5a5;
   margin-top: 1.875rem;
 }
+
 .article-text {
   font-size: 18px;
   margin-bottom: 0;
@@ -2910,10 +2919,12 @@ footer {
 .saved-container {
   max-width: 790px;
 }
-.user-orders-table-wrapper{
+
+.user-orders-table-wrapper {
   margin-bottom: 6.125rem;
   margin-top: -2rem;
 }
+
 .saved-arrow {
   transform: rotate(180deg);
   margin-right: 24px;
@@ -2994,7 +3005,7 @@ footer {
   position: relative;
 }
 
-.es-table-btn-wrapper .es-table-btn{
+.es-table-btn-wrapper .es-table-btn {
   position: absolute;
   right: 0;
 }
@@ -3202,7 +3213,7 @@ input[type=checkbox] {
   font-size: 27px;
 }
 
-.es-language-dropdown-menu{
+.es-language-dropdown-menu {
   width: 9.375rem;
   height: 7.8125rem;
   padding: 0;
@@ -3211,7 +3222,7 @@ input[type=checkbox] {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.es-language-dropdown-menu .dropdown-item{
+.es-language-dropdown-menu .dropdown-item {
   height: 33%;
   width: 100%;
   display: flex;
@@ -3222,32 +3233,34 @@ input[type=checkbox] {
   padding: 0 !important;
 }
 
-.border-line{
+.border-line {
   width: 80%;
   margin: auto;
   height: 1px;
   background-color: #d2d2d26f;
 }
 
-.es-language-dropdown-menu .first-item{
-  border-radius: .5rem .5rem 0 0; 
+.es-language-dropdown-menu .first-item {
+  border-radius: .5rem .5rem 0 0;
 }
 
-.es-language-dropdown-menu .last-item{
+.es-language-dropdown-menu .last-item {
   border-radius: 0 0 .5rem .5rem;
 }
 
-.es-language-dropdown-menu .dropdown-item img{
+.es-language-dropdown-menu .dropdown-item img {
   display: none;
 }
-.es-language-dropdown-menu .active{
+
+.es-language-dropdown-menu .active {
   background-color: transparent !important;
 }
-.es-language-dropdown-menu .active img{
+
+.es-language-dropdown-menu .active img {
   display: flex;
 }
 
-.es-language-dropdown-menu .dropdown-item-inner{
+.es-language-dropdown-menu .dropdown-item-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3255,7 +3268,7 @@ input[type=checkbox] {
   height: 100%;
 }
 
-.es-language-dropdown-menu .dropdown-item-inner img{
+.es-language-dropdown-menu .dropdown-item-inner img {
   width: 9.92px;
   height: 6.52px;
 }
@@ -3289,19 +3302,23 @@ based on demand */
 
 /* Specify the background color to be
 shown when hovering over checkbox */
-.checkbox-label:hover input ~ .geekmark:after {
+.checkbox-label:hover input~.geekmark:after {
   display: block;
   border-color: #E2A874;
-  
+
+}
+
+.checkbox-label:hover input:checked~.geekmark::after {
+  border-color: #fff
 }
 
 /* Specify the background color to be
 shown when checkbox is checked */
-.checkbox-label input:checked ~ .geekmark {
+.checkbox-label input:checked~.geekmark {
   background-color: #E2A874;
 }
 
-.checkbox-label input:checked ~ input{
+.checkbox-label input:checked~input {
   color: #151515;
 }
 
@@ -3314,7 +3331,7 @@ shown when checkbox is checked */
 }
 
 /* Display checkmark when checked */
-.checkbox-label input:checked ~ .geekmark:after {
+.checkbox-label input:checked~.geekmark:after {
   display: block;
 }
 
@@ -3333,6 +3350,7 @@ like a tickmark */
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 @media screen and (max-width: 767px) {
   .es-checkout-wrapper {
     flex-direction: column;
