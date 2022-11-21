@@ -1956,7 +1956,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-target="#authModal" data-toggle="modal" href="#">
+        <a class="nav-link" data-target="#mobProfileModal" data-toggle="modal" href="#">
           <img src="img/profile.svg" />
           <img class="d-none" src="img/mob-full-profile.svg" />
           <span class="menu-title">Профиль</span>
@@ -1964,6 +1964,92 @@
       </li>
     </ul>
   </div>
+
+  <!-- Mobile Profile Modal -->
+  <div class="modal fade" id="mobProfileModal" tabindex="-1" aria-labelledby="mobProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0">
+      <div class="modal-content mob-prof-modal-content">
+        <div class="modal-header d-flex flex-column align-items-center border-bottom-0">
+          <div class="mob-profile-logo">
+            <img src="img/mob-prof-logo.svg" alt="">
+          </div>
+          <h2 class="mob-profile-name">Huzayfa Baxromoglu</h2>
+          <p class="mob-profile-number">+998 90 900 49 38</p>
+        </div>
+        <div class="modal-body">
+          <div id="accordion">
+            <div class="card border-0">
+              <div class="card-header accordion-item d-flex align-items-center" id="mob-prof-info-heading">
+                <div class="accordion-item-ic-container">
+                  <img src="img/mob-prof-info-ic.svg" alt="">
+                </div>
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse" data-target="#collapse-mob-prof-info"
+                    aria-expanded="false" aria-controls="collapse-mob-prof-info">
+                    <span>Profil ma’lumotlarim</span><img src="img/collapse-item-ic.svg" alt="" />
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse-mob-prof-info" class="collapse" aria-labelledby="mob-prof-info-heading" data-parent="#accordion">
+                <div class="card-body accordion-item-body">
+                  Anim pariatur cliche reprehenderit,
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-header accordion-item d-flex align-items-center" id="heading-mob-prof-orders">
+                <div class="accordion-item-ic-container">
+                  <img src="img/mob-prof-orders-ic.svg" alt="">
+                </div>
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse" data-target="#collapse-mob-prof-orders"
+                    aria-expanded="false" aria-controls="collapse-mob-prof-orders">
+                    <span>Buyurtmalarim</span><img src="img/collapse-item-ic.svg" alt="" />
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse-mob-prof-orders" class="collapse" aria-labelledby="heading-mob-prof-orders" data-parent="#accordion">
+                <div class="card-body accordion-item-body">
+                  Anim pariatur cliche reprehenderit,
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-header accordion-item d-flex align-items-center" id="heading-mob-prof-articlesg">
+                <div class="accordion-item-ic-container">
+                  <img src="img/mob-prof-articles-ic.svg" alt="">
+                </div>
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse" data-target="#collapse-mob-prof-articles"
+                    aria-expanded="false" aria-controls="collapse-mob-prof-articles">
+                    <span>Maqolalarim</span><img src="img/collapse-item-ic.svg" alt="" />
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse-mob-prof-articles" class="collapse" aria-labelledby="heading-mob-prof-articles" data-parent="#accordion">
+                <div class="card-body accordion-item-body">
+                  Anim pariatur cliche reprehenderit,
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-header accordion-item d-flex align-items-center">
+                <div class="accordion-item-ic-container">
+                  <img src="img/mob-prof-logout.svg" alt="">
+                </div>
+                <h5 class="mb-0">
+                  <button class="btn btn-link mob-prof-modal-btn">
+                    <span>Profildan chiqish</span>
+                  </button>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- Search Modal -->
   <div class="modal fade" id="searchMobModal" tabindex="-1" role="dialog" aria-labelledby="searchMobModalTitle"
@@ -2172,15 +2258,17 @@
             <a class="btn findy-btn" href="#">Начать шопинг</a>
           </div>
           <div class="es-cart-list">
+            <div class="es-cart-products-category">kitoblar</div>
             <div class="es-cart-item">
               <div class="es-cart-img">
                 <img class="img-fluid" src="img/cart-item.jpg" />
               </div>
-              <div class="es-cart-product-info d-flex">
+              <div class="es-cart-product-info d-flex position-relative">
                 <div class="es-cart-info">
                   <div class="es-cart-category">
-                    <a href="#">KITOBLAR - BADIIY ADABIYOT -
+                    <a class="full-category" href="#">KITOBLAR - BADIIY ADABIYOT -
                       TURK ADABIYOTI</a>
+                    <a class="short-category" href="#">KITOBLAR</a>
                   </div>
                   <div class="es-cart-title">
                     <a href="#">Hikmatlar kitobi. Shayx
@@ -2215,96 +2303,226 @@
               <div class="es-cart-img">
                 <img class="img-fluid" src="img/cart-item.jpg" />
               </div>
-              <div class="es-cart-info">
-                <div class="es-cart-category">
-                  <a href="#">KITOBLAR - BADIIY ADABIYOT -
-                    TURK ADABIYOTI</a>
+              <div class="es-cart-product-info d-flex position-relative">
+                <div class="es-cart-info">
+                  <div class="es-cart-category">
+                    <a class="full-category" href="#">KITOBLAR - BADIIY ADABIYOT -
+                      TURK ADABIYOTI</a>
+                    <a class="short-category" href="#">KITOBLAR</a>
+                  </div>
+                  <div class="es-cart-title">
+                    <a href="#">Hikmatlar kitobi. Shayx
+                      Rumiy Jaloliddin</a>
+                  </div>
+                  <div class="es-cart-param">
+                    240 bet
+                  </div>
                 </div>
-                <div class="es-cart-title">
-                  <a href="#">Hikmatlar kitobi. Shayx
-                    Rumiy Jaloliddin</a>
+                <div class="es-cart-price-qty">
+                  <div class="es-cart-qty-delete d-flex align-items-center">
+                    <div class="es-cart-qty">
+                      <button class="btn es-minus">
+                        <img src="img/minus.svg" alt="">
+                      </button>
+                      <span class="es-cart-product-qty">1</span>
+                      <button class="btn es-plus">
+                        <img src="img/add.svg" alt="">
+                      </button>
+                    </div>
+                    <button class="es-cart-delete btn">
+                      <img src="img/Delete.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="es-cart-price">
+                    12,000 so‘m
+                  </div>
                 </div>
-                <div class="es-cart-param">
-                  240 bet
-                </div>
-              </div>
-              <div class="es-cart-price">
-                12,000 so‘m
               </div>
             </div>
             <div class="es-cart-item">
               <div class="es-cart-img">
                 <img class="img-fluid" src="img/cart-item.jpg" />
               </div>
-              <div class="es-cart-info">
-                <div class="es-cart-category">
-                  <a href="#">KITOBLAR - BADIIY ADABIYOT -
-                    TURK ADABIYOTI</a>
+              <div class="es-cart-product-info d-flex position-relative">
+                <div class="es-cart-info">
+                  <div class="es-cart-category">
+                    <a class="full-category" href="#">KITOBLAR - BADIIY ADABIYOT -
+                      TURK ADABIYOTI</a>
+                    <a class="short-category" href="#">KITOBLAR</a>
+                  </div>
+                  <div class="es-cart-title">
+                    <a href="#">Hikmatlar kitobi. Shayx
+                      Rumiy Jaloliddin</a>
+                  </div>
+                  <div class="es-cart-param">
+                    240 bet
+                  </div>
                 </div>
-                <div class="es-cart-title">
-                  <a href="#">Hikmatlar kitobi. Shayx
-                    Rumiy Jaloliddin</a>
-                </div>
-                <div class="es-cart-param">
-                  240 bet
+                <div class="es-cart-price-qty">
+                  <div class="es-cart-qty-delete d-flex align-items-center">
+                    <div class="es-cart-qty">
+                      <button class="btn es-minus">
+                        <img src="img/minus.svg" alt="">
+                      </button>
+                      <span class="es-cart-product-qty">1</span>
+                      <button class="btn es-plus">
+                        <img src="img/add.svg" alt="">
+                      </button>
+                    </div>
+                    <button class="es-cart-delete btn">
+                      <img src="img/Delete.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="es-cart-price">
+                    12,000 so‘m
+                  </div>
                 </div>
               </div>
-              <div class="es-cart-price">
-                12,000 so‘m
+            </div>
+          </div>
+          <div class="es-cart-list">
+            <div class="es-cart-products-category">kitoblar</div>
+            <div class="es-cart-item">
+              <div class="es-cart-img">
+                <img class="img-fluid" src="img/cart-item.jpg" />
+              </div>
+              <div class="es-cart-product-info d-flex position-relative">
+                <div class="es-cart-info">
+                  <div class="es-cart-category">
+                    <a class="full-category" href="#">KITOBLAR - BADIIY ADABIYOT -
+                      TURK ADABIYOTI</a>
+                    <a class="short-category" href="#">KITOBLAR</a>
+                  </div>
+                  <div class="es-cart-title">
+                    <a href="#">Hikmatlar kitobi. Shayx
+                      Rumiy Jaloliddin</a>
+                  </div>
+                  <div class="es-cart-param">
+                    240 bet
+                  </div>
+                </div>
+                <div class="es-cart-price-qty">
+                  <div class="es-cart-qty-delete d-flex align-items-center">
+                    <div class="es-cart-qty">
+                      <button class="btn es-minus">
+                        <img src="img/minus.svg" alt="">
+                      </button>
+                      <span class="es-cart-product-qty">1</span>
+                      <button class="btn es-plus">
+                        <img src="img/add.svg" alt="">
+                      </button>
+                    </div>
+                    <button class="es-cart-delete btn">
+                      <img src="img/Delete.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="es-cart-price">
+                    12,000 so‘m
+                  </div>
+                </div>
               </div>
             </div>
             <div class="es-cart-item">
               <div class="es-cart-img">
                 <img class="img-fluid" src="img/cart-item.jpg" />
               </div>
-              <div class="es-cart-info">
-                <div class="es-cart-category">
-                  <a href="#">KITOBLAR - BADIIY ADABIYOT -
-                    TURK ADABIYOTI</a>
+              <div class="es-cart-product-info d-flex position-relative">
+                <div class="es-cart-info">
+                  <div class="es-cart-category">
+                    <a class="full-category" href="#">KITOBLAR - BADIIY ADABIYOT -
+                      TURK ADABIYOTI</a>
+                    <a class="short-category" href="#">KITOBLAR</a>
+                  </div>
+                  <div class="es-cart-title">
+                    <a href="#">Hikmatlar kitobi. Shayx
+                      Rumiy Jaloliddin</a>
+                  </div>
+                  <div class="es-cart-param">
+                    240 bet
+                  </div>
                 </div>
-                <div class="es-cart-title">
-                  <a href="#">Hikmatlar kitobi. Shayx
-                    Rumiy Jaloliddin</a>
+                <div class="es-cart-price-qty">
+                  <div class="es-cart-qty-delete d-flex align-items-center">
+                    <div class="es-cart-qty">
+                      <button class="btn es-minus">
+                        <img src="img/minus.svg" alt="">
+                      </button>
+                      <span class="es-cart-product-qty">1</span>
+                      <button class="btn es-plus">
+                        <img src="img/add.svg" alt="">
+                      </button>
+                    </div>
+                    <button class="es-cart-delete btn">
+                      <img src="img/Delete.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="es-cart-price">
+                    12,000 so‘m
+                  </div>
                 </div>
-                <div class="es-cart-param">
-                  240 bet
-                </div>
-              </div>
-              <div class="es-cart-price">
-                12,000 so‘m
               </div>
             </div>
             <div class="es-cart-item">
               <div class="es-cart-img">
                 <img class="img-fluid" src="img/cart-item.jpg" />
               </div>
-              <div class="es-cart-info">
-                <div class="es-cart-category">
-                  <a href="#">KITOBLAR - BADIIY ADABIYOT -
-                    TURK ADABIYOTI</a>
+              <div class="es-cart-product-info d-flex position-relative">
+                <div class="es-cart-info">
+                  <div class="es-cart-category">
+                    <a class="full-category" href="#">KITOBLAR - BADIIY ADABIYOT -
+                      TURK ADABIYOTI</a>
+                    <a class="short-category" href="#">KITOBLAR</a>
+                  </div>
+                  <div class="es-cart-title">
+                    <a href="#">Hikmatlar kitobi. Shayx
+                      Rumiy Jaloliddin</a>
+                  </div>
+                  <div class="es-cart-param">
+                    240 bet
+                  </div>
                 </div>
-                <div class="es-cart-title">
-                  <a href="#">Hikmatlar kitobi. Shayx
-                    Rumiy Jaloliddin</a>
+                <div class="es-cart-price-qty">
+                  <div class="es-cart-qty-delete d-flex align-items-center">
+                    <div class="es-cart-qty">
+                      <button class="btn es-minus">
+                        <img src="img/minus.svg" alt="">
+                      </button>
+                      <span class="es-cart-product-qty">1</span>
+                      <button class="btn es-plus">
+                        <img src="img/add.svg" alt="">
+                      </button>
+                    </div>
+                    <button class="es-cart-delete btn">
+                      <img src="img/Delete.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="es-cart-price">
+                    12,000 so‘m
+                  </div>
                 </div>
-                <div class="es-cart-param">
-                  240 bet
-                </div>
-              </div>
-              <div class="es-cart-price">
-                12,000 so‘m
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <div class="es-cart-footer">
+            <div class="cart-products-total-info">
+              <h3 class="cart-total-header">Umumiy summa</h3>
+              <p class="es-cart-total-info es-cart-total-info-first">
+                <span class="desc">MAHSULOTLAR</span>
+                <span class="price-tl">823,000 <s>U</s></span>
+              </p>
+              <p class="es-cart-total-info">
+                <span class="desc">YETKAZIB BERISH</span>
+                <span class="price-tl">15,000 <s>U</s></span>
+              </p>
+            </div>
             <div class="es-cart-total">
               <div class="es-cart-tl">
-                Всего к оплате
+                JAMI
               </div>
               <div class="es-cart-tp">
-                420,000
+                828,000 <s>U</s>
               </div>
             </div>
             <div class="es-cart-checkout">
