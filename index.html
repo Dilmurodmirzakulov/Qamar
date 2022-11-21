@@ -1930,14 +1930,14 @@
         <a class="nav-link active" href="/">
           <img src="img/mob-nav-home.svg" />
           <img class="d-none" src="img/mob-empty-home.svg" />
-          <span class="menu-title">Главная</span>
+          <span class="menu-title">Menyu</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/menu" data-target="#searchMobModal" data-toggle="modal">
           <img src="img/search-status.svg" />
           <img class="d-none" src="img/search-status-full.svg" />
-          <span class="menu-title">Каталог</span>
+          <span class="menu-title">Izlash</span>
         </a>
       </li>
       <li class="nav-item">
@@ -1945,21 +1945,21 @@
           <img src="img/bag-2.svg" />
           <img class="d-none" src="img/bag-full-2.svg" />
           <span class="badge badge-cart">2</span>
-          <span class="menu-title">Корзина</span>
+          <span class="menu-title">Savatcha</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-target="#authModal" data-toggle="modal" href="#">
+        <a class="nav-link" data-target="#mobSaveyModal" data-toggle="modal" href="#">
           <img src="img/mob-nav-save.svg" />
           <img class="d-none" src="img/mob-full-save.svg" />
-          <span class="menu-title">Профиль</span>
+          <span class="menu-title">Saqlanma</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-target="#mobProfileModal" data-toggle="modal" href="#">
           <img src="img/profile.svg" />
           <img class="d-none" src="img/mob-full-profile.svg" />
-          <span class="menu-title">Профиль</span>
+          <span class="menu-title">Profil</span>
         </a>
       </li>
     </ul>
@@ -1984,13 +1984,14 @@
                   <img src="img/mob-prof-info-ic.svg" alt="">
                 </div>
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse" data-target="#collapse-mob-prof-info"
-                    aria-expanded="false" aria-controls="collapse-mob-prof-info">
+                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse"
+                    data-target="#collapse-mob-prof-info" aria-expanded="false" aria-controls="collapse-mob-prof-info">
                     <span>Profil ma’lumotlarim</span><img src="img/collapse-item-ic.svg" alt="" />
                   </button>
                 </h5>
               </div>
-              <div id="collapse-mob-prof-info" class="collapse" aria-labelledby="mob-prof-info-heading" data-parent="#accordion">
+              <div id="collapse-mob-prof-info" class="collapse" aria-labelledby="mob-prof-info-heading"
+                data-parent="#accordion">
                 <div class="card-body accordion-item-body">
                   Anim pariatur cliche reprehenderit,
                 </div>
@@ -2002,13 +2003,15 @@
                   <img src="img/mob-prof-orders-ic.svg" alt="">
                 </div>
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse" data-target="#collapse-mob-prof-orders"
-                    aria-expanded="false" aria-controls="collapse-mob-prof-orders">
+                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse"
+                    data-target="#collapse-mob-prof-orders" aria-expanded="false"
+                    aria-controls="collapse-mob-prof-orders">
                     <span>Buyurtmalarim</span><img src="img/collapse-item-ic.svg" alt="" />
                   </button>
                 </h5>
               </div>
-              <div id="collapse-mob-prof-orders" class="collapse" aria-labelledby="heading-mob-prof-orders" data-parent="#accordion">
+              <div id="collapse-mob-prof-orders" class="collapse" aria-labelledby="heading-mob-prof-orders"
+                data-parent="#accordion">
                 <div class="card-body accordion-item-body">
                   Anim pariatur cliche reprehenderit,
                 </div>
@@ -2020,13 +2023,15 @@
                   <img src="img/mob-prof-articles-ic.svg" alt="">
                 </div>
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse" data-target="#collapse-mob-prof-articles"
-                    aria-expanded="false" aria-controls="collapse-mob-prof-articles">
+                  <button class="btn btn-link collapsed mob-prof-modal-btn" data-toggle="collapse"
+                    data-target="#collapse-mob-prof-articles" aria-expanded="false"
+                    aria-controls="collapse-mob-prof-articles">
                     <span>Maqolalarim</span><img src="img/collapse-item-ic.svg" alt="" />
                   </button>
                 </h5>
               </div>
-              <div id="collapse-mob-prof-articles" class="collapse" aria-labelledby="heading-mob-prof-articles" data-parent="#accordion">
+              <div id="collapse-mob-prof-articles" class="collapse" aria-labelledby="heading-mob-prof-articles"
+                data-parent="#accordion">
                 <div class="card-body accordion-item-body">
                   Anim pariatur cliche reprehenderit,
                 </div>
@@ -2049,7 +2054,138 @@
       </div>
     </div>
   </div>
-  
+
+  <!-- Mobile saved empty items modal -->
+  <div class="modal fade" id="mobSavedEmptyModal" tabindex="-1" aria-labelledby="mobSavedEmptyModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0">
+      <div class="modal-content mob-prof-modal-content">
+        <div class="modal-body mob-saved-modal-body position-relative">
+          <div class="saved-container mob-saved-modal">
+            <h1 class="es-carriers-header">Saqlangan mahsulotlar <span class="mob-saved-items-qty"> 0 ta</span></h1>
+            <p class="mob-saved-modal-first-text">
+              Hozirda saqlanmaga hech qanday <strong> mahsulot qo‘shilmagan</strong>.
+            </p>
+            <p>
+              O‘zinginz yoqtirgan yoki keyinchalik sotib olmoqchi bo‘lgan mahsulotingizni “saqlanma”ga qo‘shish
+              uchun,
+              kitoblar yoki mahsulotlar ustidagi saqlash tugmasini bosishingiz kerak bo‘ladi.
+            </p>
+
+            <div class="es-icons-saved">
+              <div class="es-saved-icon">
+                <img src="img/frame.svg" alt="">
+              </div>
+              <div>
+                <img class="saved-arrow" src="img/arrow-left-disabled.svg" alt="">
+              </div>
+              <div class="es-saved-icon">
+                <img src="img/save-full.svg" alt="">
+              </div>
+            </div>
+
+            <button class="btn es-saved-btn position-absolute">MAHSULOTLARGA O‘TISH</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile saved items modal -->
+  <div class="modal fade" id="mobSaveyModal" tabindex="-1" aria-labelledby="mobSavedModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0">
+      <div class="modal-content mob-prof-modal-content">
+        <div class="modal-body mob-saved-modal-body">
+          <div class="saved-container mob-saved-modal position-relative">
+            <h1 class="es-carriers-header">Saqlangan mahsulotlar <span class="mob-saved-items-qty"> 3 ta</span></h1>
+            <div class="row mob-saved-modal-products">
+              <div class="es-product-item col-6">
+                <div class="es-product-header">
+                  <a href="product-view.html">
+                    <img class="img-fluid w-100" src="img/product.jpg" />
+                  </a>
+                  <button class="btn btn-favorite"></button>
+                </div>
+                <div class="es-product-detail">
+                  <div class="es-product-category">
+                    <a href="product-view.html">Kitoblar</a>
+                  </div>
+                  <div class="es-product-title">
+                    <a href="product-view.html">Oltin silsila to‘plami</a>
+                  </div>
+                  <div class="es-product-price">
+                    89,000 so‘m
+                  </div>
+                </div>
+                <div class="es-product-options">
+                  <div class="es-product-controls d-none">
+                    <button class="btn btn-minus">-</button>
+                    <span class="es-product-quantity">1</span>
+                    <button class="btn btn-plus">+</button>
+                  </div>
+                  <button class="btn btn-buy">XARID QILISH</button>
+                </div>
+              </div>
+              <div class="es-product-item col-6">
+                <div class="es-product-header">
+                  <a href="product-view.html">
+                    <img class="img-fluid w-100" src="img/product.jpg" />
+                  </a>
+                  <button class="btn btn-favorite"></button>
+                </div>
+                <div class="es-product-detail">
+                  <div class="es-product-category">
+                    <a href="product-view.html">Kitoblar</a>
+                  </div>
+                  <div class="es-product-title">
+                    <a href="product-view.html">Oltin silsila to‘plami</a>
+                  </div>
+                  <div class="es-product-price">
+                    89,000 so‘m
+                  </div>
+                </div>
+                <div class="es-product-options">
+                  <div class="es-product-controls d-none">
+                    <button class="btn btn-minus">-</button>
+                    <span class="es-product-quantity">1</span>
+                    <button class="btn btn-plus">+</button>
+                  </div>
+                  <button class="btn btn-buy">XARID QILISH</button>
+                </div>
+              </div>
+              <div class="es-product-item col-6">
+                <div class="es-product-header">
+                  <a href="product-view.html">
+                    <img class="img-fluid w-100" src="img/product.jpg" />
+                  </a>
+                  <button class="btn btn-favorite"></button>
+                </div>
+                <div class="es-product-detail">
+                  <div class="es-product-category">
+                    <a href="product-view.html">Kitoblar</a>
+                  </div>
+                  <div class="es-product-title">
+                    <a href="product-view.html">Oltin silsila to‘plami</a>
+                  </div>
+                  <div class="es-product-price">
+                    89,000 so‘m
+                  </div>
+                </div>
+                <div class="es-product-options">
+                  <div class="es-product-controls d-none">
+                    <button class="btn btn-minus">-</button>
+                    <span class="es-product-quantity">1</span>
+                    <button class="btn btn-plus">+</button>
+                  </div>
+                  <button class="btn btn-buy">XARID QILISH</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Search Modal -->
   <div class="modal fade" id="searchMobModal" tabindex="-1" role="dialog" aria-labelledby="searchMobModalTitle"
@@ -2252,11 +2388,6 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="empty-cart d-none">
-            <div class="ec-title">Ваша корзина пуста</div>
-            <div class="ec-text">Товары, добавленные в Корзину, будут<br>отображаться здесь</div>
-            <a class="btn findy-btn" href="#">Начать шопинг</a>
-          </div>
           <div class="es-cart-list">
             <div class="es-cart-products-category">kitoblar</div>
             <div class="es-cart-item">
@@ -2529,6 +2660,107 @@
               <button class="btn btn-green btn-lg" type="button">RASMIYLASHTIRISH</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal Empty -->
+  <div aria-hidden="true" aria-labelledby="cartModalEmptyLabel" class="modal right es-cart-modal fade" id="cartModalEmpty"
+    tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered w-100">
+      <div class="modal-content position-relative">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="empty-cart-modal-title">
+            Savatchada <br /> hech narsa yo‘q...
+          </h5>
+          <p>O‘zingizga kerakli mahsulotni topish uchun <span class="search-product-link">izlash</span> bo‘limiga o‘ting</p>
+        </div>
+        <div class="modal-body">
+          <div class="empty-cart-modal-product-title">tavsiya qilamiz</div>
+          <div class="empty-cart-slider">
+            <div class="es-product-item">
+              <div class="es-product-header">
+                <a href="product-view.html">
+                  <img class="img-fluid w-100" src="img/product.jpg" />
+                </a>
+                <button class="btn btn-favorite"></button>
+              </div>
+              <div class="es-product-detail">
+                <div class="es-product-category">
+                  <a href="product-view.html">Kitoblar</a>
+                </div>
+                <div class="es-product-title">
+                  <a href="product-view.html">Oltin silsila to‘plami</a>
+                </div>
+                <div class="es-product-price">
+                  89,000 so‘m
+                </div>
+              </div>
+              <div class="es-product-options">
+                <div class="es-product-controls d-none">
+                  <button class="btn btn-minus">-</button>
+                  <span class="es-product-quantity">1</span>
+                  <button class="btn btn-plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="es-product-item">
+              <div class="es-product-header">
+                <a href="product-view.html">
+                  <img class="img-fluid w-100" src="img/product.jpg" />
+                </a>
+                <button class="btn btn-favorite"></button>
+              </div>
+              <div class="es-product-detail">
+                <div class="es-product-category">
+                  <a href="product-view.html">Kitoblar</a>
+                </div>
+                <div class="es-product-title">
+                  <a href="product-view.html">Oltin silsila to‘plami</a>
+                </div>
+                <div class="es-product-price">
+                  89,000 so‘m
+                </div>
+              </div>
+              <div class="es-product-options">
+                <div class="es-product-controls d-none">
+                  <button class="btn btn-minus">-</button>
+                  <span class="es-product-quantity">1</span>
+                  <button class="btn btn-plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="es-product-item">
+              <div class="es-product-header">
+                <a href="product-view.html">
+                  <img class="img-fluid w-100" src="img/product.jpg" />
+                </a>
+                <button class="btn btn-favorite"></button>
+              </div>
+              <div class="es-product-detail">
+                <div class="es-product-category">
+                  <a href="product-view.html">Kitoblar</a>
+                </div>
+                <div class="es-product-title">
+                  <a href="product-view.html">Oltin silsila to‘plami</a>
+                </div>
+                <div class="es-product-price">
+                  89,000 so‘m
+                </div>
+              </div>
+              <div class="es-product-options">
+                <div class="es-product-controls d-none">
+                  <button class="btn btn-minus">-</button>
+                  <span class="es-product-quantity">1</span>
+                  <button class="btn btn-plus">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="es-go-to-catalog-btn position-absolute" href="#">MAHSULOTLAR KATALOGIGA O‘TISH</a>
         </div>
       </div>
     </div>

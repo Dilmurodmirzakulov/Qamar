@@ -38,6 +38,9 @@
     <main class="es-checkout-bg">
         <div class="container">
             <div class="es-checkout-wrapper">
+                <a class="checkout-back-btn" href="#">
+                    <img src="img/arrow-left.svg" alt="">
+                </a>
                 <div class="es-checkout-info-containers">
                     <div class="es-checkout-info-container">
                         <h2 class="es-checkout-info-header">Manzil va tel.raqam</h2>
@@ -101,7 +104,8 @@
                             placeholder="Karta raqamini kiriting (---- ---- ---- ----)">
                         <input type="text" class="form-control es-checkout-input"
                             placeholder="Amal qilish muddatini kiriting (--/--)">
-                        <button class="btn es-confirm-order-btn btn-lg w-100">BUYURTMANI TASDIQLASH</button>
+                        <button class="btn es-confirm-order-btn es-confirm-order-btn-desc btn-lg w-100">BUYURTMANI
+                            TASDIQLASH</button>
                     </div>
                 </div>
                 <div class="es-order-wrapper">
@@ -116,16 +120,16 @@
                             </button>
                         </div>
                         <div class="es-purchased-items row">
-                            <div class="col-4 es-purchased-item">
+                            <div class="col-lg-4 col-2 es-purchased-item">
                                 <img class="img-fluid" src="img/medicine.png" alt="">
                             </div>
-                            <div class="col-4 es-purchased-item">
+                            <div class="col-lg-4 col-2 es-purchased-item">
                                 <img class="img-fluid" src="img/medicine.png" alt="">
                             </div>
-                            <div class="col-4 es-purchased-item">
+                            <div class="col-lg-4 col-2 es-purchased-item">
                                 <img class="img-fluid" src="img/medicine.png" alt="">
                             </div>
-                            <div class="col-4 es-purchased-item">
+                            <div class="col-lg-4 col-2 es-purchased-item">
                                 <img class="img-fluid" src="img/medicine.png" alt="">
                             </div>
                         </div>
@@ -141,8 +145,14 @@
                             <span class="es-price-title">Yetkazib berish</span>
                             <span class="es-item-price">15,000 so‘m</span>
                         </p>
-                        <p class="es-total-price-title">Jami:</p>
-                        <p class="es-total-price">357,000 so‘m</p>
+                        <div class="d-flex justify-content-between align-items-center mob-confirm-order-container">
+                            <div>
+                                <p class="es-total-price-title">Jami</p>
+                                <p class="es-total-price">357,000 <s>U</s></p>
+                            </div>
+                            <button class="btn es-confirm-order-btn es-confirm-order-btn-mob btn-lg">BUYURTMANI
+                                TASDIQLASH</button>
+                        </div>
                     </div>
                 </div>
             </div>

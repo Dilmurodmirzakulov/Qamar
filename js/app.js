@@ -23,6 +23,14 @@ $().ready(function () {
     prevScrollpos = currentScrollPos
   }
 
+  $('.empty-cart-slider').slick({
+    responsive: [{
+      breakpoint: 767, settings: {
+        slidesToShow: 1, slidesToScroll: 1, arrows: false, centerMode: true, slickSetOption: true
+      }
+    }]
+  })
+
   $('.product-slick').slick({
     dots: false,
     infinite: false,
