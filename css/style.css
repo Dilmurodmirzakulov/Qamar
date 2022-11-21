@@ -3554,19 +3554,20 @@ like a tickmark */
   left: 50%;
   transform: translateX(-50%);
 }
-#cartModalEmpty .modal-header{
+
+#cartModalEmpty .modal-header {
   padding: 1.25rem 1.25rem 0 1.25rem;
 }
 
-#cartModalEmpty .modal-body{
+#cartModalEmpty .modal-body {
   padding: 0 1.25rem;
 }
 
-#cartModalEmpty .modal-footer{
+#cartModalEmpty .modal-footer {
   padding: 0 1.25rem 1.25rem 1.25rem;
 }
 
-.empty-cart-modal-title{
+.empty-cart-modal-title {
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -3574,25 +3575,25 @@ like a tickmark */
   line-height: 29px;
 }
 
-.empty-cart-modal-product-title{
+.empty-cart-modal-product-title {
   font-weight: 600;
   font-size: 1.25rem;
 }
 
-.empty-cart-slider .es-product-item{
+.empty-cart-slider .es-product-item {
   margin: 18px 9px;
 }
 
-#mobSaveyModal .btn-favorite{
+#mobSaveyModal .btn-favorite {
   background-image: url(../img/saved-ic.svg);
 }
 
-.checkout-back-btn{
+.checkout-back-btn {
   display: none;
   margin-top: 1.5rem;
 }
 
-.es-confirm-order-btn-mob{
+.es-confirm-order-btn-mob {
   display: none;
 }
 
@@ -4001,108 +4002,170 @@ like a tickmark */
     padding-left: .1rem;
   }
 
-  .checkout-back-btn{
+  .checkout-back-btn {
     display: block;
   }
 
-  .es-checkout-bg .container{
+  .es-checkout-bg .container {
     margin: 0;
     padding: 0 1.25rem;
   }
 
-  .es-checkout-info-header{
+  .es-checkout-info-header {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1.125rem !important;
   }
 
-  .es-checkout-desc{
+  .es-checkout-desc {
     margin-bottom: 2.25rem;
   }
 
-  .es-alert-text{
+  .es-alert-text {
     margin-bottom: 3rem;
   }
 
-  .es-checkout-info-container{
+  .es-checkout-info-container {
     margin-bottom: 3rem;
   }
 
-  .es-checkout-options{
+  .es-checkout-options {
     margin-top: 2.625rem;
   }
 
-  .es-confirm-order-btn{
+  .es-confirm-order-btn {
     margin-bottom: 0;
   }
 
-  .es-order-wrapper{
+  .es-order-wrapper {
     margin-top: 0;
   }
 
-  .es-order{
+  .es-order {
     padding: 0;
     background-color: #fff;
   }
 
-  .es-order .es-order-header{
+  .es-order .es-order-header {
     margin-bottom: .5rem;
   }
 
-  .es-order-edit{
+  .es-order-edit {
     display: none;
   }
-  
-  .es-purchased-item img{
+
+  .es-purchased-item img {
     width: 50px;
     height: 50px;
   }
 
-  .es-purchased-items{
+  .es-purchased-items {
     margin-bottom: .75rem;
   }
 
-  .es-item-price-container *{
+  .es-item-price-container * {
     color: #A5A5A5;
     font-size: 14px;
     font-weight: 400;
   }
 
-  .es-item-price-container::before{
+  .es-item-price-container::before {
     border-bottom: .125rem dotted #a5a5a5;
     bottom: .35rem;
   }
 
-  .es-price-title{
+  .es-price-title {
     text-transform: uppercase;
   }
 
-  .es-item-price{
+  .es-item-price {
     font-size: 1rem;
   }
 
-  .es-confirm-order-btn-desc{
+  .es-confirm-order-btn-desc {
     display: none;
   }
 
-  .es-confirm-order-btn-mob{
+  .es-confirm-order-btn-mob {
     display: inline;
     width: max-content;
   }
 
-  .es-total-price-title{
+  .es-total-price-title {
     font-size: .75rem;
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
   }
 
-  .es-total-price{
+  .es-total-price {
     font-weight: 700;
     font-size: 1rem;
   }
 
-  .mob-confirm-order-container{
+  .mob-confirm-order-container {
     margin-bottom: 36px;
+  }
+
+  .confirmed-order-header {
+    display: none;
+  }
+
+  .confirmed-order-app-section {
+    display: none;
+  }
+
+  .es-receipt-container {
+    padding: 0 1.25rem;
+  }
+
+  .es-receipt-wrapper {
+    margin: 0;
+  }
+
+  .es-receipt-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1.125rem;
+    margin-bottom: .75rem;
+  }
+
+  .es-confirmed-products {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2.625rem;
+  }
+
+  .es-confirmed-product {
+    flex: none;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+
+  .es-confirmed-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .es-receipt-wrapper .es-order-info-header {
+    margin-top: 2.625rem;
+    margin-bottom: 15px;
+  }
+
+  .es-receipt-total-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  .es-reciept-price-title{
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+
+  .es-reciept-price{
+    margin-bottom: 0;
   }
 }

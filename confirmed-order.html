@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="sticky-top">
+    <header class="sticky-top confirmed-order-header">
         <nav class="navbar navbar-expand-lg es-gray-navbar sm-hide" id="blackNavbar">
             <div class="container">
                 <ul class="navbar-nav">
@@ -297,8 +297,11 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container es-receipt-container">
             <div class="es-receipt-wrapper">
+                <a class="checkout-back-btn" href="#">
+                    <img src="img/arrow-left.svg" alt="">
+                </a>
                 <h2 class="es-receipt-header">Buyurtmangiz qabul qilindi</h2>
                 <h2 class="es-receipt-header d-none">Buyurtmangiz qabul qilingan</h2>
                 <p class="es-delivery-time">1-sentabr 18:00 gacha yetkaziladi</p>
@@ -333,7 +336,7 @@
                     <h4>To‘lov turi</h4>
                     <p>Onlayn to‘lov <span>(to‘lov amalga oshirilgan)</span></p>
                 </div>
-                <h3 class="es-order-info-header">Buyurtma summasi</h3>
+                <h3 class="es-order-info-header">Umumiy summa</h3>
                 <p class="es-item-price-container">
                     <span class="es-price-title es-order-price">Buyurtma summasi</span>
                     <span class="es-item-price es-order-price">412,000 so‘m</span>
@@ -354,7 +357,7 @@
             </div>
         </div>
 
-        <section class="es-app-section">
+        <section class="es-app-section confirmed-order-app-section">
             <div class="es-app-bg">
                 <div class="container-fluid">
                     <div class="es-app-content">
@@ -463,27 +466,38 @@
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link active" href="/">
-                    <img src="img/ic_main_mini.svg" />
-                    <span class="menu-title">Главная</span>
+                    <img src="img/mob-nav-home.svg" />
+                    <img class="d-none" src="img/mob-empty-home.svg" />
+                    <span class="menu-title">Menyu</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/menu">
-                    <img src="img/ic_menu_mini.svg" />
-                    <span class="menu-title">Каталог</span>
+                <a class="nav-link" href="/menu" data-target="#searchMobModal" data-toggle="modal">
+                    <img src="img/search-status.svg" />
+                    <img class="d-none" src="img/search-status-full.svg" />
+                    <span class="menu-title">Izlash</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <img src="img/ic_cart_mini.svg" />
+                <a class="nav-link" data-target="#cartModal" data-toggle="modal" href="#">
+                    <img src="img/bag-2.svg" />
+                    <img class="d-none" src="img/bag-full-2.svg" />
                     <span class="badge badge-cart">2</span>
-                    <span class="menu-title">Корзина</span>
+                    <span class="menu-title">Savatcha</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-target="#authModal" data-toggle="modal" href="#">
-                    <img src="img/ic_profile_mini.svg" />
-                    <span class="menu-title">Профиль</span>
+                <a class="nav-link" data-target="#mobSaveyModal" data-toggle="modal" href="#">
+                    <img src="img/mob-nav-save.svg" />
+                    <img class="d-none" src="img/mob-full-save.svg" />
+                    <span class="menu-title">Saqlanma</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-target="#mobProfileModal" data-toggle="modal" href="#">
+                    <img src="img/profile.svg" />
+                    <img class="d-none" src="img/mob-full-profile.svg" />
+                    <span class="menu-title">Profil</span>
                 </a>
             </li>
         </ul>
