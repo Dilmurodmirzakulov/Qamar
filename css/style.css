@@ -4328,4 +4328,13 @@ like a tickmark */
   .es-pv-table{
     margin-bottom: 42px;
   }
+
+  .es-products-pages{
+    margin-bottom: 50px;
+  }
+
+  .es-category-collections{
+    margin-top: 0;
+    margin-bottom: 102px;
+  }
 }
