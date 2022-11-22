@@ -1670,12 +1670,16 @@ footer {
 }
 
 #range-slider-price,
-#range-slider-page {
+#mob-range-slider-price,
+#range-slider-page,
+#mob-range-slider-page {
   margin-bottom: 2rem;
 }
 
 #range-slider-price.noUi-horizontal,
-#range-slider-page.noUi-horizontal {
+#mob-range-slider-price.noUi-horizontal,
+#range-slider-page.noUi-horizontal,
+#mob-range-slider-page.noUi-horizontal {
   height: .25rem;
   background-color: rgba(210, 210, 210, 0.5);
   border: 0;
@@ -1683,12 +1687,16 @@ footer {
 }
 
 #range-slider-page .noUi-connect,
-#range-slider-price .noUi-connect {
+#mob-range-slider-page .noUi-connect,
+#range-slider-price .noUi-connect,
+#mob-range-slider-price .noUi-connect {
   background-color: #e2a874;
 }
 
 #range-slider-page.noUi-horizontal .noUi-handle,
-#range-slider-price.noUi-horizontal .noUi-handle {
+#mob-range-slider-page.noUi-horizontal .noUi-handle,
+#range-slider-price.noUi-horizontal .noUi-handle,
+#mob-range-slider-price.noUi-horizontal .noUi-handle {
   width: 1.125rem;
   height: 1.125rem;
   border: 0;
@@ -1701,8 +1709,12 @@ footer {
 
 #range-slider-price .noUi-handle:before,
 #range-slider-price .noUi-handle:after,
+#mob-range-slider-price .noUi-handle:before,
+#mob-range-slider-price .noUi-handle:after,
 #range-slider-page .noUi-handle:before,
-#range-slider-page .noUi-handle:after {
+#range-slider-page .noUi-handle:after,
+#mob-range-slider-page .noUi-handle:before,
+#mob-range-slider-page .noUi-handle:after {
   display: none;
 }
 
@@ -3597,6 +3609,43 @@ like a tickmark */
   display: none;
 }
 
+.mob-filter-header{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.mob-filter-title-category{
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #A5A5A5;
+}
+
+#mobFilterModal .modal-body{
+  padding: 0;
+}
+
+.mobile-filter-container{
+  padding: 1.25rem;
+  margin-bottom: 3.375rem;
+}
+
+.es-category-filter-last{
+  border-bottom: 0;
+}
+
+.mob-filter-header-container{
+  margin: 1.25rem;
+  padding: 0;
+  margin-bottom: 0;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.category-header-btns{
+  display: none;
+  padding: 15px;
+}
+
 @media screen and (max-width: 767px) {
   .es-checkout-wrapper {
     flex-direction: column;
@@ -4167,5 +4216,35 @@ like a tickmark */
 
   .es-reciept-price{
     margin-bottom: 0;
+  }
+
+  .category-filter-wrapper{
+    display: none;
+  }
+
+  .es-product-filter{
+    display: none;
+  }
+
+  .category-products-list{
+    padding: 0 1.25rem;
+  }
+
+  .es-category-title{
+    margin-bottom: 1.5rem;
+  }
+
+  .category-filter-dropdown button{
+    padding-left: 0;
+  }
+
+  .category-app-section{
+    display: none;
+  }
+
+  .category-header-btns{
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: -.5rem;
   }
 }

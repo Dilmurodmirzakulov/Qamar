@@ -295,6 +295,13 @@
     </nav>
   </header>
 
+  <div class="category-header-btns d-flex align-items-center justify-content-between">
+    <a class="checkout-back-btn m-0" href="#">
+      <img src="img/arrow-left.svg" alt="">
+    </a>
+    <button class="btn p-0"><img src="img/search-normal-black.svg" alt=""></button>
+  </div>
+
   <main>
     <section class="es-category-section">
       <div class="container">
@@ -308,7 +315,7 @@
 
         <h1 class="es-category-title">Diniy ma’rifiy adabiyot <span class="es-category-count">661 ta</span></h1>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 category-filter-wrapper">
             <div class="es-category-filter">
               <ul class="es-category-list">
                 <li>
@@ -452,8 +459,24 @@
                 <img src="img/ic_filter.svg" alt="">
               </li>
             </ul>
+            <div class="category-filter-btns d-flex align-items-center justify-content-between">
+              <div class="dropdown category-filter-dropdown">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  Yangilari bo‘yicha
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <button class="btn pr-0" data-toggle="modal" data-target="#mobFilterModal">
+                <img src="img/setting-4.svg" alt="">
+                Filtrlash
+              </button>
+            </div>
             <div class="row gx-1">
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -482,7 +505,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -511,7 +534,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -540,7 +563,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -569,7 +592,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -598,7 +621,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -627,7 +650,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -656,7 +679,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -685,7 +708,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -714,7 +737,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -743,7 +766,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -772,7 +795,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-6">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -832,7 +855,7 @@
       </div>
     </section>
 
-    <section class="es-app-section">
+    <section class="es-app-section category-app-section">
       <div class="es-app-bg">
         <div class="container-fluid">
           <div class="es-app-content">
@@ -943,30 +966,192 @@
     <ul class="nav">
       <li class="nav-item">
         <a class="nav-link active" href="/">
-          <img src="img/ic_main_mini.svg" />
-          <span class="menu-title">Главная</span>
+          <img src="img/mob-nav-home.svg" />
+          <img class="d-none" src="img/mob-empty-home.svg" />
+          <span class="menu-title">Menyu</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/menu">
-          <img src="img/ic_menu_mini.svg" />
-          <span class="menu-title">Каталог</span>
+        <a class="nav-link" href="/menu" data-target="#searchMobModal" data-toggle="modal">
+          <img src="img/search-status.svg" />
+          <img class="d-none" src="img/search-status-full.svg" />
+          <span class="menu-title">Izlash</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <img src="img/ic_cart_mini.svg" />
+        <a class="nav-link" data-target="#cartModal" data-toggle="modal" href="#">
+          <img src="img/bag-2.svg" />
+          <img class="d-none" src="img/bag-full-2.svg" />
           <span class="badge badge-cart">2</span>
-          <span class="menu-title">Корзина</span>
+          <span class="menu-title">Savatcha</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-target="#authModal" data-toggle="modal" href="#">
-          <img src="img/ic_profile_mini.svg" />
-          <span class="menu-title">Профиль</span>
+        <a class="nav-link" data-target="#mobSaveyModal" data-toggle="modal" href="#">
+          <img src="img/mob-nav-save.svg" />
+          <img class="d-none" src="img/mob-full-save.svg" />
+          <span class="menu-title">Saqlanma</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-target="#mobProfileModal" data-toggle="modal" href="#">
+          <img src="img/profile.svg" />
+          <img class="d-none" src="img/mob-full-profile.svg" />
+          <span class="menu-title">Profil</span>
         </a>
       </li>
     </ul>
+  </div>
+
+  <!-- Mobile Filter Modals -->
+  <div class="modal fade" id="mobFilterModal" tabindex="-1" aria-labelledby="mobFilterModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0">
+      <div class="modal-content">
+        <div class="modal-header mob-filter-header-container flex-column border-bottom-0">
+          <a class="checkout-back-btn m-0"  data-dismiss="modal" aria-label="Close" href="#">
+            <img src="img/arrow-left.svg" alt="">
+          </a>
+          <h5 class="modal-title mob-filter-header" id="mobFilterModalLabel">
+            Filtrlash <span class="mob-filter-title-category"> (Kitoblar)</span>
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-3 mobile-filter-container">
+            <div class="es-category-filter">
+              <ul class="es-category-list">
+                <li>
+                  <a href="actions.html">Aksiyalar</a>
+                </li>
+                <div id="accordion" class="accordion-hover">
+                  <div class="card es-accordion-card">
+                    <button class="btn es-collapse-btn collapsed" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      Diniy ma’rifiy adabiyot
+                    </button>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul class="es-accordion-list">
+                          <li>
+                            <a href="#">Aqida</a>
+                          </li>
+                          <li>
+                            <a href="#">Fiqh</a>
+                          </li>
+                          <li>
+                            <a href="#">Hadis</a>
+                          </li>
+                          <li>
+                            <a href="#">Siyrat</a>
+                          </li>
+                          <li>
+                            <a href="#">Tafsir</a>
+                          </li>
+                          <li>
+                            <a href="#">Tajvid</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li>
+                  <a href="#">Badiiy adabiyot</a>
+                </li>
+                <li>
+                  <a href="#">Biznes va shaxsiy rivojlanish</a>
+                </li>
+                <li>
+                  <a href="#">Rus tilidagi diniy kitoblar</a>
+                </li>
+                <li>
+                  <a href="#">Ota-onalar va bolalar uchun</a>
+                </li>
+                <li>
+                  <a href="#">Xatcho’p</a>
+                </li>
+              </ul>
+            </div>
+            <div class="es-category-filter">
+              <div class="es-cf-title">Narx</div>
+              <div id="mob-range-slider-price"></div>
+              <div class="es-range-values">
+                <input class="form-control es-range-min price-range" name="min" type="text" />
+                <span class="es-minus-line">-</span>
+                <input class="form-control es-range-max price-range" name="max" type="text" />
+              </div>
+            </div>
+            <div class="es-category-filter">
+              <div class="es-cf-title">Nashriyot</div>
+              <ul class="es-category-list">
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Hasan ul-Basriy
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Muhammad Sayyid Tantoviy
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Muhammad Taqiy Usmoniy
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Ahmad Lutfiy qozonchi
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="es-category-filter">
+              <div class="es-cf-title">Muallif</div>
+              <ul class="es-category-list">
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Hasan ul-Basriy
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Muhammad Sayyid Tantoviy
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Muhammad Taqiy Usmoniy
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox-label">
+                    <input name="check" type="checkbox" /> Ahmad Lutfiy qozonchi
+                    <span class="geekmark"></span>
+                  </label>
+                </li>
+              </ul>
+              <button class="es-category-see-all-btn btn">BARCHASINI KO'RISH</button>
+            </div>
+            <div class="es-category-filter es-category-filter-last">
+              <div class="es-cf-title">Betlar soni</div>
+              <div id="mob-range-slider-page"></div>
+              <div class="es-range-values">
+                <input class="form-control es-range-min page-range" name="minPage" type="text" />
+                <span class="es-minus-line">-</span>
+                <input class="form-control es-range-max page-range" name="maxPage" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Cart Modal -->

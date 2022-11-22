@@ -163,6 +163,35 @@ $().ready(function () {
   }
 
 
+  let mobSlider = document.getElementById('mob-range-slider-price')
+  if (mobSlider !== null) {
+    noUiSlider.create(mobSlider, {
+      start: [100000, 1000000], connect: true, range: {
+        'min': 100000, 'max': 1000000
+      }
+    })
+
+    mobSlider.noUiSlider.on('update', function (e) {
+      $('.es-range-min.price-range').val(formatPrice(Math.round(e[0])))
+      $('.es-range-max.price-range').val(formatPrice(Math.round(e[1])))
+    })
+  }
+
+  let mobSliderPage = document.getElementById('mob-range-slider-page')
+  if (mobSliderPage !== null) {
+    noUiSlider.create(mobSliderPage, {
+      start: [100000, 1000000], connect: true, range: {
+        'min': 100000, 'max': 1000000
+      }
+    })
+
+    mobSliderPage.noUiSlider.on('update', function (e) {
+      $('.es-range-min.page-range').val(formatPrice(Math.round(e[0])))
+      $('.es-range-max.page-range').val(formatPrice(Math.round(e[1])))
+    })
+  }
+
+
   $(window).on('scroll', function () {
     $scrollTop = $(window).scrollTop(), t = $('#back-top'), $scrollTop > 350 ? t.addClass('visible') : t.removeClass('visible')
   })
