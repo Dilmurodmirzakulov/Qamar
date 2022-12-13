@@ -295,16 +295,16 @@
     </nav>
   </header>
 
-  <div class="category-header-btns d-flex align-items-center justify-content-between">
-    <a class="checkout-back-btn m-0" href="#">
-      <img src="img/arrow-left.svg" alt="">
-    </a>
-    <button class="btn p-0"><img src="img/search-normal-black.svg" alt=""></button>
-  </div>
 
   <main>
     <section class="es-category-section">
       <div class="container">
+        <div class="category-header-btns d-flex align-items-center justify-content-between">
+          <a class="product-view-back-btn m-0" href="#">
+            <img src="img/arrow-left.svg" alt="">
+          </a>
+          <button class="btn p-0"><img src="img/search-normal-black.svg" alt=""></button>
+        </div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb es-breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Bosh sahifa</a></li>
@@ -313,15 +313,15 @@
           </ol>
         </nav>
 
-        <h1 class="es-category-title">Diniy ma’rifiy adabiyot <span class="es-category-count">661 ta</span></h1>
+        <h1 class="es-category-title">Diniy ma’rifiy adabiyot<span class="es-category-count">661 ta</span></h1>
         <div class="row">
           <div class="col-md-3 category-filter-wrapper">
             <div class="es-category-filter">
-              <ul class="es-category-list">
-                <li>
-                  <a href="actions.html">Aksiyalar</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="actions.html">Aksiyalar</a>
                 </li>
-                <div id="accordion" class="accordion-hover">
+                <!-- <li id="accordion" class="nav-item">
                   <div class="card es-accordion-card">
                     <button class="btn es-collapse-btn collapsed" data-toggle="collapse" data-target="#collapseOne"
                       aria-expanded="false" aria-controls="collapseOne">
@@ -329,44 +329,77 @@
                     </button>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
-                        <ul class="es-accordion-list">
-                          <li>
-                            <a href="#">Aqida</a>
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Aqida</a>
                           </li>
-                          <li>
-                            <a href="#">Fiqh</a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Fiqh</a>
                           </li>
-                          <li>
-                            <a href="#">Hadis</a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Hadis</a>
                           </li>
-                          <li>
-                            <a href="#">Siyrat</a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Siyrat</a>
                           </li>
-                          <li>
-                            <a href="#">Tafsir</a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Tafsir</a>
                           </li>
-                          <li>
-                            <a href="#">Tajvid</a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Tajvid</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-                <li>
-                  <a href="#">Badiiy adabiyot</a>
+                </li> -->
+                <li class="nav-item" id="accordion-category">
+                  <div class="card border-0">
+                    <div class="card-header bg-transparent border-0 p-0" id="category-accordion1">
+                      <button class="btn w-100 text-left border-0 nav-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Diniy ma’rifiy adabiyot
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="category-accordion1"
+                      data-parent="#accordion-category">
+                      <ul class="card-body nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Aqida</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Fiqh</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Hadis</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Siyrat</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Tafsir</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Tajvid</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Badiiy adabiyot</a>
                 </li>
-                <li>
-                  <a href="#">Biznes va shaxsiy rivojlanish</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Biznes va shaxsiy rivojlanish</a>
                 </li>
-                <li>
-                  <a href="#">Rus tilidagi diniy kitoblar</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Rus tilidagi diniy kitoblar</a>
                 </li>
-                <li>
-                  <a href="#">Ota-onalar va bolalar uchun</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ota-onalar va bolalar uchun</a>
                 </li>
-                <li>
-                  <a href="#">Xatcho’p</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Xatcho’p</a>
                 </li>
               </ul>
             </div>
@@ -445,8 +478,8 @@
             </div>
           </div>
           <div class="col-md-9 category-products-list">
-            <ul class="es-product-filter align-baseline">
-              <li class="active">
+            <ul class="es-product-filter nav">
+              <li class="active nav-item">
                 <button class="btn">Yangilari bo‘yicha</button>
               </li>
               <li>
@@ -470,13 +503,13 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </div>
-              <button class="btn pr-0" data-toggle="modal" data-target="#mobFilterModal">
-                <img src="img/setting-4.svg" alt="">
+              <button class="btn pr-0 d-flex align-items-center" data-toggle="modal" data-target="#mobFilterModal">
+                <img class="mob-filter-ic" src="img/setting-4.svg" alt="">
                 Filtrlash
               </button>
             </div>
-            <div class="row gx-1">
-              <div class="col-md-3 col-6">
+            <div class="row gx-1 category-products-container">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -505,7 +538,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -534,7 +567,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -563,7 +596,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -592,7 +625,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -621,7 +654,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -650,7 +683,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -679,7 +712,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -708,7 +741,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -737,7 +770,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -766,7 +799,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -795,7 +828,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3 col-6 category-products-row">
                 <div class="es-product-item">
                   <div class="es-product-header">
                     <a href="product-view.html">
@@ -826,7 +859,7 @@
               </div>
             </div>
             <div class="es-products-pages">
-              <button class="btn">
+              <button class="btn pages-arrow">
                 <img src="img/arrow-left-disabled.svg" alt="">
               </button>
               <ul class="es-page-numbers">
@@ -846,7 +879,7 @@
                   <button class="btn">5</button>
                 </li>
               </ul>
-              <button class="btn">
+              <button class="btn pages-arrow">
                 <img src="img/ic_slick_right.svg" alt="">
               </button>
             </div>
@@ -1077,7 +1110,7 @@
     <div class="modal-dialog m-0">
       <div class="modal-content">
         <div class="modal-header mob-filter-header-container flex-column border-bottom-0">
-          <a class="checkout-back-btn m-0"  data-dismiss="modal" aria-label="Close" href="#">
+          <a class="checkout-back-btn m-0" data-dismiss="modal" aria-label="Close" href="#">
             <img src="img/arrow-left.svg" alt="">
           </a>
           <h5 class="modal-title mob-filter-header" id="mobFilterModalLabel">
@@ -1087,56 +1120,57 @@
         <div class="modal-body">
           <div class="col-md-3 mobile-filter-container">
             <div class="es-category-filter">
-              <ul class="es-category-list">
-                <li>
-                  <a href="actions.html">Aksiyalar</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="actions.html">Aksiyalar</a>
                 </li>
-                <div id="accordion" class="accordion-hover">
-                  <div class="card es-accordion-card">
-                    <button class="btn es-collapse-btn collapsed" data-toggle="collapse" data-target="#collapseOne"
-                      aria-expanded="false" aria-controls="collapseOne">
-                      Diniy ma’rifiy adabiyot
-                    </button>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                        <ul class="es-accordion-list">
-                          <li>
-                            <a href="#">Aqida</a>
-                          </li>
-                          <li>
-                            <a href="#">Fiqh</a>
-                          </li>
-                          <li>
-                            <a href="#">Hadis</a>
-                          </li>
-                          <li>
-                            <a href="#">Siyrat</a>
-                          </li>
-                          <li>
-                            <a href="#">Tafsir</a>
-                          </li>
-                          <li>
-                            <a href="#">Tajvid</a>
-                          </li>
-                        </ul>
-                      </div>
+                <li class="nav-item" id="accordion-category">
+                  <div class="card border-0">
+                    <div class="card-header bg-transparent border-0 p-0" id="category-accordion1">
+                      <button class="btn w-100 text-left border-0 nav-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Diniy ma’rifiy adabiyot
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="category-accordion1"
+                      data-parent="#accordion-category">
+                      <ul class="card-body nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Aqida</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Fiqh</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Hadis</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Siyrat</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Tafsir</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Tajvid</a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-                <li>
-                  <a href="#">Badiiy adabiyot</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Badiiy adabiyot</a>
                 </li>
-                <li>
-                  <a href="#">Biznes va shaxsiy rivojlanish</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Biznes va shaxsiy rivojlanish</a>
                 </li>
-                <li>
-                  <a href="#">Rus tilidagi diniy kitoblar</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Rus tilidagi diniy kitoblar</a>
                 </li>
-                <li>
-                  <a href="#">Ota-onalar va bolalar uchun</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ota-onalar va bolalar uchun</a>
                 </li>
-                <li>
-                  <a href="#">Xatcho’p</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Xatcho’p</a>
                 </li>
               </ul>
             </div>

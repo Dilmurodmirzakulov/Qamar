@@ -49,7 +49,7 @@ $().ready(function () {
       }
     }, {
       breakpoint: 767, settings: {
-        slidesToShow: 1, slidesToScroll: 1, arrows: false, centerMode: true
+        slidesToShow: 1.8, slidesToScroll: 1, arrows: false, centerMode: false
       }
     }]
   })
